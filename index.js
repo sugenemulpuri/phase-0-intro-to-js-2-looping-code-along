@@ -1,16 +1,14 @@
 // Code your solutions in this file
 
 
-const names = [];
-
-function writeCards(names) {
-
+function writeCards(names, event) {
+  let messages = [];
   for (let i = 0; i < names.length; i++) {
-    console.log(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+    messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     debugger;
 
   }
-  return names;
+  return messages;
 }
 
 writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
